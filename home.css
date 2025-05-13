@@ -10,7 +10,9 @@
   --rosa: #eeacb7;
   --marrom: #582f17;
   --marrom_claro: #915633;
-  --branco: #fff;
+  --branco: #ffffff;
+  --creme: #a07337;
+  --cinza: #c5c5c4;
 }
 
 header {
@@ -80,3 +82,42 @@ img {
 main {
   padding-top: 50px;
 }
+
+.container-2 {
+  padding-top: 5px;
+}
+
+.filtro {
+  background-color: var(--creme);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 6px 20px, rgba(0, 0, 0, 0.23) 0px 2px 10px;
+  height: 200px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--branco);
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 0px;
+}
+
+.selecoes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 0px;
+}
+
+.estado, .cidade, .opt-1, .opt-2{
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  background-color: var(--cinza);
+  color: var(--marrom);
+}
+
