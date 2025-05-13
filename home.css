@@ -19,6 +19,7 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container {
@@ -44,8 +45,8 @@ header {
 
 .category:hover {
   text-decoration: overline;
-  transition: 0.1s;
   color: var(--marrom_claro);
+  transition: all 0.5s;
 }
 
 .botao {
@@ -55,17 +56,27 @@ header {
   border-radius: 15px;
   padding: 10px;
   width: 170px;
-  color: var(--branco)
+  color: var(--branco);
+  transition: all 0.3s;
 }
 
 .botao:hover {
   background-color: var(--rosa);
   border: 1px solid var(--marrom);
   color: var(--marrom);
-  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.swiper {
-  width: 100%;
-  max-height: 700px;
+
+img {
+  width: 1920px;
+  height: auto;
+}
+
+.swiper-pagination-bullet {
+  --swiper-theme-color: var(--rosa);
+}
+
+main {
+  padding-top: 50px;
 }
