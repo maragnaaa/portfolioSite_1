@@ -13,6 +13,7 @@
   --branco: #ffffff;
   --creme: #a07337;
   --cinza: #dbdbd8;
+  --preto: #000;
 }
 
 header {
@@ -137,22 +138,100 @@ main {
 }
 
 .card-list {
-  max-width: 230px;
-  max-height: 350px;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-item img {
-  width: 230px;
-  height: 350px;
-  padding: 10px;
-  border-radius: 20px;
-  cursor: pointer; 
-}
-
-.card-item {
-  display: flex;
+  height: 300px;
+  display: inline;
+  margin-left: 12px;
   justify-content: center;
-  align-items: center;
+}
+
+.card-item-1 {
+  background-image: url(./assets/image_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: 200px 300px;
+  border-radius: 30px;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.card-item-2 {
+  background-image: url(./assets/image_2.jpeg);
+  background-repeat: no-repeat;
+  background-size: 200px 300px;
+  border-radius: 30px;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.card-item-3 {
+  background-image: url(./assets/image_3.jpeg);
+  background-repeat: no-repeat;
+  background-size: 200px 300px;
+  border-radius: 30px;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.card-item-4 {
+  background-image: url(./assets/image_4.jpeg);
+  background-repeat: no-repeat;
+  background-size: 200px 300px;
+  border-radius: 30px;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.card-item-5 {
+  background-image: url(./assets/image_5.jpeg);
+  background-repeat: no-repeat;
+  background-size: 200px 300px;
+  border-radius: 30px;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.text-slider-1, .text-slider-2, .text-slider-3, .text-slider-4, .text-slider-5 {
+  padding: 210px 0px 0px;
+  color: var(--branco);
+  font-weight: bold;
+}
+
+.btn-more {
+  border: none;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: var(--marrom);
+  color: var(--branco);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-more:hover {
+    background-color: var(--cinza);
+    color: var(--preto);
+}
+
+.slider-wrapper i {
+  width: 30px;
+  height: 30px;
+  background-color: var(--marrom);
+  text-align: center;
+  border-radius: 50%;
+  color: var(--branco);
 }
