@@ -130,18 +130,28 @@ main {
   font-weight: bold;
 }
 
-.slider-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0px 0px;
+.mySwiper2 {
+  max-width: 900px;
+
 }
 
-.card-list {
-  height: 300px;
-  display: inline;
-  margin-left: 12px;
-  justify-content: center;
+.swiper-button-next, .swiper-button-prev {
+  background-color: var(--marrom);
+  padding: 15px;
+  border-radius: 50%;
+  --swiper-navigation-color: var(--branco);
+  --swiper-navigation-size: 10px;
+  font-size: smaller;
+  margin-right: 12px;
+  box-shadow: rgba(168, 168, 168, 0.25) 0px 54px 55px, rgba(201, 201, 201, 0.12) 0px -12px 30px, rgba(207, 207, 207, 0.12) 0px 4px 6px, rgba(194, 194, 194, 0.17) 0px 12px 13px, rgba(172, 172, 172, 0.09) 0px -3px 5px;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
 }
 
 .card-item-1 {
@@ -227,11 +237,13 @@ main {
     color: var(--preto);
 }
 
-.slider-wrapper i {
-  width: 30px;
-  height: 30px;
+.carousel i {
+  width: 15px;
+  height: 15px;
   background-color: var(--marrom);
   text-align: center;
   border-radius: 50%;
   color: var(--branco);
+  cursor: pointer;
+  line-height: 10px;
 }
