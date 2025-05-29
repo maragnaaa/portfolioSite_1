@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  margin: 0;  
+  font-family: "Sansation";
+  box-sizing: border-box;
+}
+
+:root{
+  --rosa: #eeacb7;
+  --marrom: #582f17;
+  --marrom_claro: #915633;
+  --branco: #ffffff;
+  --creme: #a07337;
+  --cinza: #dbdbd8;
+  --preto: #000;
+  --azul: #007bff;
+  --azul-escuro: #176bc5;
+  --cinza-escuro: #242424;
+  --cinza-claro: #555;
+  --vermelho: #ff0000;
+}
+
+header {
+  background-color: var(--rosa);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.categories {
+  width: 520px;
+}
+
+
+.logo_1, .categories {
+  display: inline-block;
+  align-content: center;
+  align-items: center;
+}
+
+.category {
+  padding: 20px;
+  text-decoration: none;
+  color: var(--marrom);
+}
+
+.category:hover {
+  text-decoration: overline;
+  color: var(--marrom_claro);
+  transition: all 0.5s;
+}
+
+.btn-user {
+  border: none;
+  background-color: var(--marrom);
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 10px;
+  width: 170px;
+  color: var(--branco);
+  transition: all 0.3s;
+}
+
+.btn-user:hover {
+  background-color: var(--rosa);
+  border: 1px solid var(--marrom);
+  color: var(--marrom);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.bar {
+  height: 30px;
+  background-color: var(--marrom);
+}
+
+.footer {
+  background-color: var(--branco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 20px;
+}
+
+.footer .categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer .btn-user:hover {
+  background-color: var(--branco);
+}
+
+.cookies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+}
+
+.text-cookies {
+  width: 1200px;
+}
+
+.btn-cookies {
+  border: none;
+  background-color: var(--azul);
+  padding: 8px;
+  color: var(--branco);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn-cookies:hover {
+  background-color: var(--azul-escuro);
+}
+
+.link-cookies {
+  text-decoration: none;
+  color: var(--azul);
+}
+
+.link-cookies:hover {
+  text-decoration: underline;
+}
